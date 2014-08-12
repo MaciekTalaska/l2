@@ -1,8 +1,8 @@
 # Header
 menu:
   Home: /
-  Archives: /archives
-rss: /atom.xml
+  Archives: /archives/
+rss: //feeds.feedburner.com/timnewtech/
 
 # Content
 excerpt_link: Read More
@@ -11,16 +11,18 @@ fancybox: true
 # Sidebar
 sidebar: right
 widgets:
-- category
-- tag
-- tagcloud
-- archive
 - recent_posts
+- category
+- archive
+- tagcloud
+- tag
 
 # Miscellaneous
-google_analytics:
-favicon: /favicon.png
-twitter:
-google_plus:
+google_analytics: UA-30567867-1
+favicon: true
+twitter: timnew
+google_plus: 108780866821209046829
 fb_admins:
 fb_app_id:
+
+recent_posts: 10
