@@ -1,8 +1,8 @@
-# Landscape
+# L2
 
-A brand new default theme for [Hexo].
+A customized theme based on [timnew's landscape theme](https://github.com/timnew/landscape) [Hexo].
 
-- [Preview](http://hexo.io/hexo-theme-landscape/)
+- [Preview](http://maciektalaska.github.io)
 
 ## Installation
 
