@@ -1,6 +1,6 @@
 # L2
 
-A customized theme based on [timnew's landscape theme](https://github.com/timnew/landscape) [Hexo].
+A customized theme based on [timnew's landscape theme](https://github.com/timnew/landscape) for [Hexo](https://hexo.io) static site generator.
 
 - [Preview](http://maciektalaska.github.io)
 
@@ -16,12 +16,12 @@ $ git clone https://github.com/hexojs/hexo-theme-landscape.git themes/landscape
 
 ### Enable
 
-Modify `theme` setting in `_config.yml` to `landscape`.
+Modify `theme` setting in `_config.yml` to `l2`.
 
 ### Update
 
 ``` bash
-cd themes/landscape
+cd themes/l2
 git pull
 ```
 
