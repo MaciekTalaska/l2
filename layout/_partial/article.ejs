@@ -23,9 +23,12 @@
         <%- post.content %>
       <% } %>
     </div>
-    <div class="article-category-footer">
-      <%- partial('post/category') %>
-    </div>
+    <!-- this additional guard has to be here, as there are 2 places where categories for a single post are shown  -->
+    <% if (post.categories && post.categories.length) { %>
+      <div class="article-category-footer">
+        <%- partial('post/category') %>
+      </div>
+    <% } %>
     <footer class="article-footer">
       <% if (page.share  !== false) { %>
         <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('share') %></a>
