@@ -297,6 +297,9 @@ $article-share-link
     font-family: font-icon
     absolute-center(@font-size)
     text-align: center
+  &:hover
+    &:before
+      color: white
 
 .article-share-twitter
   @extend $article-share-link
@@ -305,8 +308,6 @@ $article-share-link
     color: color-twitter
   &:hover
     background: color-twitter
-    &:before
-      color:  white
 
 .article-share-facebook
   @extend $article-share-link
@@ -315,8 +316,6 @@ $article-share-link
     color: color-facebook
   &:hover
     background: color-facebook
-    &:before
-      color: white
 
 .article-share-pinterest
   @extend $article-share-link
@@ -325,8 +324,6 @@ $article-share-link
     color: color-pinterest
   &:hover
     background: color-pinterest
-    &:before
-      color: white
 
 .article-share-reddit
   @extend $article-share-link
@@ -335,9 +332,6 @@ $article-share-link
     color: color-reddit
   &:hover
     background: color-reddit
-    &:before
-      color: white
-      background: color-reddit
 
 
 .article-gallery
