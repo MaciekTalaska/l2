@@ -283,8 +283,7 @@
   line-height: 36px
 
 .article-share-links
-  clearfix()
-  background: color-background
+  clear: both
 
 $article-share-link
   width: 50px
@@ -293,46 +292,52 @@ $article-share-link
   float: left
   position: relative
   color: #999
-  text-shadow: 0 1px #fff
   &:before
     font-size: 20px
     font-family: font-icon
     absolute-center(@font-size)
     text-align: center
-  &:hover
-    color: #fff
 
 .article-share-twitter
   @extend $article-share-link
   &:before
     content: "\f099"
+    color: color-twitter
   &:hover
     background: color-twitter
-    text-shadow: 0 1px darken(color-twitter, 20%)
+    &:before
+      color:  white
 
 .article-share-facebook
   @extend $article-share-link
   &:before
     content: "\f09a"
+    color: color-facebook
   &:hover
     background: color-facebook
-    text-shadow: 0 1px darken(color-facebook, 20%)
+    &:before
+      color: white
 
 .article-share-pinterest
   @extend $article-share-link
   &:before
     content: "\f0d2"
+    color: color-pinterest
   &:hover
     background: color-pinterest
-    text-shadow: 0 1px darken(color-pinterest, 20%)
+    &:before
+      color: white
 
 .article-share-reddit
   @extend $article-share-link
   &:before
     content: "\f1a1"
+    color: color-reddit
   &:hover
     background: color-reddit
-    text-shadow: 0 1px darken(color-reddit, 20%)
+    &:before
+      color: white
+      background: color-reddit
 
 
 .article-gallery
