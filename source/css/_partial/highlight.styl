@@ -16,9 +16,6 @@ $code-block
   background: highlight-background
   margin: 0 article-padding * -1
   padding: 15px article-padding
-  border-style: none
-  border-color: color-border
-  border-width: 1px
   overflow: auto
   color: highlight-foreground
   line-height: font-size * line-height
@@ -73,17 +70,14 @@ $line-numbers
       background: highlight-selection
   .gist
     margin: 0 article-padding * -1
-    border-style: none
-    border-color: color-border
-    border-width: 1px 
     background: highlight-background
     padding: 15px article-padding 15px 0
     color: highlight-foreground
     margin: 10px
     border-radius: 5px
+    border: none
     .gist-file
       border: none
-      font-family: font-mono
       margin: 0
       .gist-data
         background: none
@@ -91,14 +85,12 @@ $line-numbers
         .line-numbers
           @extend $line-numbers
           background: none
-          border: none
           padding: 0 20px 0 0
         .line-data
           padding: 0 !important
       .highlight
         margin: 0
         padding: 0
-        border: none
         background: highlight-background
       .gist-meta
         background: highlight-background
@@ -113,6 +105,14 @@ $line-numbers
           font-weight: normal
           &:hover
             text-decoration: underline
+
+
+// force gist to use font of specified size
+.article-entry .gist .blob-num
+.article-entry .gist .blob-code-inner
+  font-family: font-mono
+  font-size: font-size
+
 
 pre
   .comment
